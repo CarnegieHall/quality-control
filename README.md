@@ -9,9 +9,9 @@ These scripts have benefitted immensely from a wide community of archiving, pres
 
 | Script Name         | Purpose           |
 | ------------- |-------------|
-| **checkDAMS.py**     | Create CSV of files that do not appear in a given list of files |
-|**checksumValidation.py**      | Compares two given checksum hashes and outputs log of pass/fail/missing |
-|**md5Scrape.py** | Scrapes all .md5 sidecar files in a given directory and outputs information into a formatted CSV |
+| **[checkDAMS.py](https://github.com/CarnegieHall/quality-control/blob/master/checkDAMS.py)**     | Create CSV of files that do not appear in a given list of files |
+|**[checksumValidation.py](https://github.com/CarnegieHall/quality-control/blob/master/checksumValidation.py)**      | Compares two given checksum hashes and outputs log of pass/fail/missing |
+|**[md5Scrape.py](https://github.com/CarnegieHall/quality-control/blob/master/md5Scrape.py)** | Scrapes all .md5 sidecar files in a given directory and outputs information into a formatted CSV |
 
 
 ##USAGE AND LICENSE
