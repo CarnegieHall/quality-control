@@ -6,7 +6,7 @@
 |QC-003|Receive HDD from vendor|Vendor harddrive|	Confirm with vendor that the HDD was safely received. If there are missing files on the HDD, notify the vendor in writing immediately.| | |			
 |QC-004|Integrity checking|Vendor harddrive|Generate CHECKSUM A on all files on HDD|[md5Scrape.py](https://github.com/CarnegieHall/quality-control/blob/master/md5Scrape.py)| |			
 |QC-005|Basic QC|Vendor harddrive|Perform aural and visual QC review on selected files (25% - beginning, middle, and end of file)||They mark if files don't align with FNC (but don't change it). Sometimes the date is off, or cha instead of CH. KG must review FOR REVIEW files.|
-|QC-006|Metadata QC|Vendor harddrive|Validate the technical metadata.|MDQC| |		
+|QC-006|Metadata QC|Vendor harddrive|Validate the technical metadata.|[MDQC](https://github.com/avpreserve/mdqc)| |		
 |QC-007|Transfer|Vendor harddrive|Transfer files from HHD to Server| | |
 |QC-008|Integrity checking|Server|Generate CHECKSUM B on all transferred files on Server|[md5Scrape.py](https://github.com/CarnegieHall/quality-control/blob/master/md5Scrape.py)||	
 |QC-009|Integrity checking|Server|Run checksum validation script (checksum_validation.py) that compares CHECKSUM A (HDD) with CHECKSUM B (Server)|[checksumValidation.py](https://github.com/CarnegieHall/quality-control/blob/master/checksumValidation.py)|	|	
