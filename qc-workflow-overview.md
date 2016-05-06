@@ -1,6 +1,6 @@
 # DAP QC Workflow
-|Step #|Phase|File Location|Activity|Tool|Notes|
-| ---- |:---:|:-----------:|------|:---:|---|
+|Step #|Phase|File Location|Activity|Tool|
+| ---- |:---:|:-----------:|------|:---:|
 |QC-001|Receive harddrive from vendor|Vendor harddrive|	Make sure both the harddrive and the box are labeled with content, vendor, and date information. Confirm that what was expected from the vendor was received.|		
 |QC-002|Receive harddrive from vendor|Vendor harddrive|	Verify content on the drive matches what the vendor was supposed to send. Refer to the Statement of Work and existing project management documents.|		
 |QC-003|Receive harddrive from vendor|Vendor harddrive|	Confirm with vendor that the harrdrive was safely received. If there are missing files on the harddrive, notify the vendor in writing immediately.| ||			
