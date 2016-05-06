@@ -11,6 +11,6 @@
 |QC-008|Integrity checking|Server|Generate CHECKSUM B on all transferred files on Server|[md5Scrape.py](https://github.com/CarnegieHall/quality-control/blob/master/md5Scrape.py)|Again, the checksum should be stored in another csv. file.|	
 |QC-009|Integrity checking|Server|Run the script that compares CHECKSUM A (HDD) with CHECKSUM B (Server)|[checksumValidation.py](https://github.com/CarnegieHall/quality-control/blob/master/checksumValidation.py)|	|	
 |QC-010|Filename audit/metadata matching|Vendor harddrive|Run the script which identifies unmatched files and associates filenames with OPAS metadata. This script also identifies unmatched OPAS ID's to be cross checked with programs to ensure no programs are missing from the digitized list. Filenames are modified.|[reconcileList.py](https://github.com/CarnegieHall/quality-control/blob/master/reconcileList.py)| |	
-|QC-011|Embed metadata|Server|Embed selected metadata field values into audio, video, still images|[embedCopyrightMetadata.sh](https://github.com/CarnegieHall/quality-control/blob/master/embedCopyrightMetadata.sh)| |			
+|QC-011|Embed metadata|Server|Embed selected metadata field values into audio, video, still images|[embedCopyrightMetadata.sh](https://github.com/CarnegieHall/quality-control/blob/master/embedCopyrightMetadata.sh)|Does not apply to those files that do not have OPAS IDs.|			
 |QC-012|Cortex ingest prep|Server|Create Central CSV for ingest mapping template| | |		
 |QC-013|Cortex ingest prep|Server|Copy to the destinate folder and collapse HDD-dictated hierarchy| | |			
