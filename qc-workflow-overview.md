@@ -1,5 +1,4 @@
 # DAP QC Workflow
-
 |Step #| Phase|	File Location|Activity|	Update TRACKING tab|Instructions/Documentation Location|   Notes|
 | ---- |:----:|:------------:|:------:|:------------------:|:---------------------------------:|:------:|
 |QC-001|Receive HDD from vendor|Vendor harddrive|	Make sure both the HDD and the box are labeled with content, vendor, and date information.| | | |		
