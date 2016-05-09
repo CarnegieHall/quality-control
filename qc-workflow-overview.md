@@ -10,7 +10,7 @@
 |QC-007|Transfer|Vendor harddrive|Transfer files from harddrive to Server| | |
 |QC-008|Integrity checking|Server|Generate CHECKSUM B on all transferred files on Server|[md5Scrape.py](https://github.com/CarnegieHall/quality-control/blob/master/md5Scrape.py)||	
 |QC-009|Integrity checking|Server|Run the script that compares CHECKSUM A (from the harddrive) with CHECKSUM B (on the server) (Server)|[checksumValidation.py](https://github.com/CarnegieHall/quality-control/blob/master/checksumValidation.py)|	|	
-|QC-010|Filename audit/metadata matching|Server|Run the script which associates filenames with performance metadata. This script also identifies unmatched event IDs to be cross-checked to ensure no content are missing from the digitized material. Filenames are modified. Does not apply to those files that are not related to events.|[reconcileList.py](https://github.com/CarnegieHall/quality-control/blob/master/reconcileList.py)| |	
+|QC-010|Filename audit/metadata matching|Server|Run the script which associates filenames with performance metadata. This script also identifies unmatched event IDs to be cross-checked to ensure no content are missing from the digitized material. Filenames are modified. Does not apply to those files that are not related to events.|[metadata-matching](https://github.com/CarnegieHall/metadata-matching.git)| |	
 |QC-011|Embed metadata|Server|Embed selected metadata field values into audio, video, still images|[embedCopyrightMetadata.sh](https://github.com/CarnegieHall/quality-control/blob/master/embedCopyrightMetadata.sh)||			
 |QC-012|DAMS ingest prep|Server|Create metadata CSV for DAMS ingest template| | |		
 |QC-013|DAMS ingest prep|Server|Copy to the destination folder and collapse harddrive-dictated hierarchy| | |			
