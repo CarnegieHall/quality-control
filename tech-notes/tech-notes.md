@@ -1,7 +1,8 @@
+
 [forthcoming tech notes]
 
 
-
+##LICENSE INFORMATION
 _The MIT License (MIT)_
 
 _Copyright (c) 2016 Carnegie Hall_
