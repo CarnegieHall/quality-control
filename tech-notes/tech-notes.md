@@ -3,6 +3,8 @@
 
 ##USE CASES
 
+Below are brief descriptions and snippets of code used to satisfy various small-scale use cases in our quality control workflow. 
+
 ###COPY FILES FROM SUBDIRECTORIES
 To copy all TIF files from subdirectories in a target directory:
 
