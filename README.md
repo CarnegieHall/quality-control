@@ -14,6 +14,7 @@ These scripts have benefitted immensely from a wide community of archiving, pres
 | **[reconcileList.py](https://github.com/CarnegieHall/quality-control/blob/master/reconcileList.py)**     | Compare two lists of files, and output CSV of non-matching values |
 | **[embedCopyrightMetadata.sh](https://github.com/CarnegieHall/quality-control/blob/master/embedCopyrightMetadata.sh)** | Script to embed hardcoded Creator and Copyright Notice metadata using ExifTool |
 
+In [tech-notes](https://github.com/CarnegieHall/quality-control/tree/master/tech-notes), we include technical notes that are brief descriptions of snippets of code used to satisfy various small-scale use cases in our quality control workflow. 
 
 ##USAGE AND LICENSE
 ###USAGE GUIDELINES
