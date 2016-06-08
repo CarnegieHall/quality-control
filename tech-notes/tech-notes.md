@@ -1,5 +1,16 @@
 
-[forthcoming tech notes]
+#tech-notes
+
+##USE CASES
+
+###COPY FILES FROM SUBDIRECTORIES
+To copy all TIF files from subdirectories in a target directory:
+
+  `find . -name \*.tif -exec /bin/cp {} /TARGETDIR/ \;`
+
+To move (NOT COPY TMP AND DELETE ORIGINAL) preservation master-identified MOV files from subdirectories in a target directory:
+
+  `$ find . -name \*_pm.mov -exec /bin/mv {} TARGETDIR \;`
 
 
 ##LICENSE INFORMATION
