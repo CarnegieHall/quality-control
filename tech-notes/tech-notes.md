@@ -27,6 +27,15 @@ To find the total number of TIF files in a TARGETDIR (the result of this will be
 
   In the TARGETDIR, `ls -l dir/*/*.tif | wc -l`
 
+###CONCATENATE MULTIPLE CSV FILES
+**WHY**: In the QC workflow, we break down our digitized material into managable chunks for manual and batch procedures. To create a unified metadata spreadsheet for ingest into our DAMS, we need to be able to combine all disparate spreadsheets in a target grandparent directory into a single CSV with a specific format and prefix in the filename as part of our ingest procedures.
+
+To combine all CSVs in subdirectories into one CSV with desried filenaming convention:
+
+  `cd /TARGETDIR/`
+  
+  `cat /TARGETDIR/*/*.csv > Central_OPASmatchedFiles_[HDD-ID_volume].csv`
+
 ###EMBED ADMINISTRATIVE METADATA INTO VIDEO
 **WHY**: When using a vendor to digitize, it is necessary to QC the metadata embedded into a file in addition to the checks to ensure the file opens, passes playback, contains expected audio and video streams, etc. For our preservation masters, CH required certain fields contain specific copyright and producer metadata. When issues with this metadata are found (inaccurate, incomplete, or simply missing) we use [Exiftool](http://www.sno.phy.queensu.ca/~phil/exiftool/) to embed these fields with the desired information. 
 
