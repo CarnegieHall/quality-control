@@ -3,7 +3,7 @@
 # ----For the full license terms, please visit https://github.com/CarnegieHall/quality-control/blob/master/LICENSE----
 # requires csv, json, sys, time
 # input file structure is a CSV with md5 hash value, md5 creation date time stamp, filename, mime type, last modified date time stamp, path to the file
-# run script with 4 arguments:
+# run script with 5 arguments:
 # argument 0 is the script name
 # argument 1 is the path to the Harddrive checksums output
 # argument 2 is the path to the Isilon checksums output
