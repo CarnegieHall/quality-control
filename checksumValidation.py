@@ -7,7 +7,8 @@
 # argument 0 is the script name
 # argument 1 is the path to the Harddrive checksums output
 # argument 2 is the path to the Isilon checksums output
-# argument 3 is the harddrive ID/volume that will be added to the output filename (E.g. 12-306)
+# argument 3 is the path to the checksum validation directory you want the TXT to be saved to
+# argument 4 is the harddrive ID/volume that will be added to the output filename (E.g. 12-306)
 
 import csv
 import json
@@ -21,6 +22,7 @@ isilon_fileDict = {}
 #matchString is just a long string, with tabs and newline characters that will be output as a .txt file
 matchString = ''
 volume = sys.argv[len(sys.argv)-1]
+outputPath = sys.argv[len(sys.argv)-2]
 
 with open(str(sys.argv[1]), 'rU') as f, open(str(sys.argv[2]), 'rU') as g:
     hardDrive = csv.reader(f, delimiter=',', quotechar='"')
@@ -61,7 +63,8 @@ with open(str(sys.argv[1]), 'rU') as f, open(str(sys.argv[2]), 'rU') as g:
 
 # #Saves the results as a text file with a datetimestamp in the output filename
 outputFilename = ''.join('checksumValidation_' + volume + '_' + timestr)
-newfile = open('../ChecksumValidation_Results/%s.txt' % outputFilename, 'w')
+outputFullPath = ''.join(outputPath + '/' + '%s.txt' % outputFilename)
+newfile = open(outputFullPath, 'w')
 header = str('HD Filename' + '\t' + 'HD Checksum' + '\t' + 'Status' + '\n')
 newfile.write(header)
 newfile.write(matchString)
