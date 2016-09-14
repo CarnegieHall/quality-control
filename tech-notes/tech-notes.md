@@ -27,6 +27,15 @@ To find the total number of TIF files in a TARGETDIR (the result of this will be
 
   In the TARGETDIR, `ls -l dir/*/*.tif | wc -l`
 
+###OUTPUT DIRECTORY TREE
+**WHY**: There are instances where creating and validating a disk image are out of scope, and instead we need to copy material, e.g. from a source hard drive or networked drive, to a back up destination. For complex folder hierarchies, it is helpful to have two plain-text directory tree outputs to compare to help identify inconsistencies on a large scale. With these files, we use many comparison strategies, including [Diff Checker](https://www.diffchecker.com). 
+
+To create a directory tree, we use the `ls` command in this way:
+
+  `cd /TARGETDIR/`
+  
+  `ls -RF > ~/DESTINATION/folderlist.txt`
+
 ###CONCATENATE MULTIPLE CSV FILES
 **WHY**: In the QC workflow, we break down our digitized material into managable chunks for manual and batch procedures. To create a unified metadata spreadsheet for ingest into our DAMS, we need to be able to combine all disparate spreadsheets in a target grandparent directory into a single CSV with a specific format and prefix in the filename as part of our ingest procedures.
 
