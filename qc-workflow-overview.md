@@ -1,4 +1,9 @@
-# DAP QC Workflow
+# Digitized Materials Quality Control Workflow
+
+Below is a working draft of the phases and individual steps we take upon receiving digitized material on hard drives from our digitization vendors. For ease and control, batches of information are based on the hard drive they arrived on. We track the progress of the hard drive as it moves through the steps in a shared tracking document, gathering additional information (or exceptions) as necessary. 
+
+The ultimate goal following QC is to move materials into an Asset Staging area, where they will be uploaded, along with any additional metadata records, into our Digital Asset Management System (DAMS) for access and transcoding for distribution. 
+
 |Step #|Phase|File Location|Activity|Tool|
 | ---- |:---:|:-----------:|------|:---:|
 |QC-001|Receive harddrive from vendor|Vendor harddrive|	Make sure both the harddrive and the box are labeled with content, vendor, and date information. Confirm that what was expected from the vendor was received.|		
