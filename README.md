@@ -5,6 +5,8 @@ Carnegie Hall Archives maintains a series of small, portable scripts to expedite
 
 These scripts have benefitted immensely from a wide community of archiving, preservation, and programming experts who share their code and troubleshooting techniques online. We are excited by the opportunity to participate in this community and have our methods improve through open collaboration and mutual exchange.
 
+A working draft of our QC Procedures is available [here](qc-workflow-overview.md). 
+
 ##CONTENTS
 
 | Script Name         | Purpose           |
