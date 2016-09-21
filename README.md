@@ -12,6 +12,7 @@ A working draft of our QC Procedures is available [here](qc-workflow-overview.md
 | Script Name         | Purpose           |
 | ------------- |-------------|
 |**[checksumValidation.py](checksumValidation.py)**      | Compares two given checksum hashes and outputs log of pass/fail/missing |
+|**[qa_cksum.sh](qa_cksum.sh)**      | Creates formatted output of md5, md5 create timestamp, filename, mime type, last modified timestamp |
 |**[copyFilesFromList.py](copyFilesFromList.py)** | Copies files to a target directory based on filename identified in a CSV |
 |**[md5Scrape.py](md5Scrape.py)** | Scrapes all .md5 sidecar files in a given directory and outputs information into a formatted CSV |
 | **[reconcileList.py](reconcileList.py)**     | Compare two lists of files, and output CSV of non-matching values |
