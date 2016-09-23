@@ -71,6 +71,18 @@ To embed producer and copyright statement in one MOV file (with sample metadata)
 
   `exiftool -Producer="Carnegie Hall Archives" -Copyright="© 2016 Carnegie Hall Archives" -overwrite_original_in_place file.mov`
 
+###CREATE GIF FROM STILL IMAGES
+**WHY**: Who doesn't love a good GIF? 
+
+Using ImageMagick (already installed, or use `brew install imagemagick` if you have Homebrew):
+
+  `cd [directory of images to be made into GIF]`
+  
+  `convert *.jpg out.gif`
+  
+  If you want to add a nice delay/reduce FPS, try:
+  
+  `convert -delay 20 *.jpg out2.gif`
 
 ##LICENSE INFORMATION
 _The MIT License (MIT)_
