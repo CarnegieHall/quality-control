@@ -5,9 +5,9 @@ Carnegie Hall Archives maintains a series of small, portable scripts to expedite
 
 These scripts have benefitted immensely from a wide community of archiving, preservation, and programming experts who share their code and troubleshooting techniques online. We are excited by the opportunity to participate in this community and have our methods improve through open collaboration and mutual exchange.
 
-A working draft of our QC Procedures is available [here](qc-workflow-overview.md). 
-
 ##CONTENTS
+
+###SCRIPTS
 
 | Script Name         | Purpose           |
 | ------------- |-------------|
@@ -18,7 +18,10 @@ A working draft of our QC Procedures is available [here](qc-workflow-overview.md
 | **[reconcileList.py](reconcileList.py)**     | Compare two lists of files, and output CSV of non-matching values |
 | **[embedCopyrightMetadata.sh](embedCopyrightMetadata.sh)** | Script to embed hardcoded Creator and Copyright Notice metadata using ExifTool |
 
-In [tech-notes](tech-notes/tech-notes.md), we include technical notes that are brief descriptions of snippets of code used to satisfy various small-scale use cases in our quality control workflow. 
+###DOCUMENTATION
+- [Digitization specs](digitization-specs.md) provided to our vendors for reformatting.
+- A working draft of our [post-digitization quality control workflow](qc-workflow-overview.md).
+- [Technical notes](tech-notes/tech-notes.md), or brief descriptions of snippets of code used to satisfy various small-scale use cases in our quality control workflow. 
 
 ##USAGE AND LICENSE
 ###USAGE GUIDELINES
