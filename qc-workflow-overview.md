@@ -1,6 +1,6 @@
 # Digitized Materials Quality Control Workflow
 
-Below is a working draft of the phases and individual steps we take upon receiving digitized material on hard drives from our digitization vendors. For ease and control, batches of information are based on the hard drive they arrived on. We track the progress of the hard drive as it moves through the steps in a shared tracking document, gathering additional information (or exceptions) as necessary. 
+Below is a working draft of the phases and individual steps we take upon receiving digitized material on hard drives from our digitization vendors (specs for reformatting are available [here](digitization-specs.md)). For ease and control, batches of information are based on the hard drive they arrived on. We track the progress of the hard drive as it moves through the steps in a shared tracking document, gathering additional information (or exceptions) as necessary. 
 
 The ultimate goal following QC is to move materials into an Asset Staging area, where they will be uploaded, along with any additional metadata records, into our Digital Asset Management System (DAMS) for access and transcoding for distribution. 
 
