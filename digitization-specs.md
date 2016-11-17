@@ -13,13 +13,12 @@ This document describes preservation master (and mezzanine, where applicable) de
 ###Audio
 
 ####Preservation masters: Analog sources (e.g., 1/4” reel to reels)
-- Broadcast Wave Format(BWF)
+- Broadcast Wave Format (BWF)
 - Audio encoded at 24-bit, 96kHz.
 - All BWF header fields should be populated with the appropriate metadata.
 
 ####Preservation masters: Audio from optical sources (CDs)
-
-- Broadcast Wave Format(BWF)
+- Broadcast Wave Format (BWF)
 - Audio encoded at 16-bit, 44.1kHz.
 - All BWF header fields should be populated with the appropriate metadata.
 
@@ -32,7 +31,7 @@ This document describes preservation master (and mezzanine, where applicable) de
 - Maintain original aspect ratio, recording standard, interlacing, number of audio channels and ancillary information such as original timecode and closed captioning.
 
 ####Video mezzanines:
-- Quick Time wrapper (.mov extension)
+- QuickTime wrapper (.mov extension)
 - Video encoded using the FourCC `dvc ` codec.
 
 ###Motion Picture Film
