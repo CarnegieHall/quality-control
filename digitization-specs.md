@@ -38,11 +38,13 @@ This document describes preservation master (and mezzanine, where applicable) de
 ###Motion Picture Film
 
 ####Film preservation masters:
-- DPX
+- 2K files (DPX stacks)
 
 ####Film mezzanines:
 - QuickTime ProRes 422 HQ, progressive scanning, frame rate: 24 fps, 1920x1080 for 16:9 aspect ratios or 720x486 for 4:3 aspect ratios.
 
 ###Still Image - Concert Programs
+- 16 bit uncompressed TIFF files, minimum 400 DPI, RGB colorspace
 
 ###Still Image - Flyers, Photographs, Ephemera, etc.
+- 16 bit uncompressed TIFF files, minimum 600 DPI, RGB colorspace
