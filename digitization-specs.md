@@ -26,14 +26,14 @@ This document describes preservation master (and mezzanine, where applicable) de
 ###Video
 
 ####Preservation video masters:
-- Quick Time wrapper (.mov extension)
-- Video encoded using the 10-bit YUV 4:2:2 uncompressed codec with the FourCC identifier v210.
+- QuickTime wrapper (.mov extension)
+- Video encoded using the 10-bit YUV 4:2:2 uncompressed codec with the FourCC identifier `v210`.
 - Audio encoded as uncompressed PCM audio, 48khz.
 - Maintain original aspect ratio, recording standard, interlacing, number of audio channels and ancillary information such as original timecode and closed captioning.
 
 ####Video mezzanines:
 - Quick Time wrapper (.mov extension)
-- Video encoded using the FourCC ‘dvc’ codec.
+- Video encoded using the FourCC `dvc ` codec.
 
 ###Motion Picture Film
 
