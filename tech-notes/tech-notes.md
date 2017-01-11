@@ -84,6 +84,17 @@ Using ImageMagick (already installed, or use `brew install imagemagick` if you h
   
   `convert -delay 20 *.jpg out2.gif`
 
+###REDACT VISUAL CONTENT FROM STILL IMAGES
+**WHY**: In an effort to balance access with privacy, there are situations where some pieces of information much be visually redacted from still image archival materials. We use Adobe Acrobat's redaction tool to change pixels in the image to black so that content like personal phone numbers or email addresses are visually obscured in access copies. 
+
+*FYI - THIS PROCESS DOES NOT OBSCURE POTENTIALLY SENSITIVE METADATA LIKE GEOLOCATIONS OR DATES* - it only enables blocked viewing of  'redacted' visual content.
+
+1. Open file(s) you want to redact information from in Adobe Acrobat (CH is using v.10.1.16).
+2. Click on *TOOLS* and under _Black Out & Remove Content_, click *Mark for Redaction*.
+3. Drag a box around the areas of content you want to black out in the image. For handwritten notes, try to reduce the amount of other information that is obscured by the redaction box so you are not execessively redacting non-sensitive information. This may mean you should use multiple, smaller boxes to avoid blacking out large swathes of information that should be accessible.
+4. After the identified content is surrounded by the red boxes, under _Black Out & Remove Content_, click *Apply Redaction*. This will turn your red outlined boxes into black filled DRAFT redactions. It's not final yet! One more step...
+5. Click _File_ > _Save_ or _Save As_ and name as appropriate in the preferred destination. Now the pixels representing the sensitive information have been overwritten with black. Check it out!
+
 ##LICENSE INFORMATION
 _The MIT License (MIT)_
 
