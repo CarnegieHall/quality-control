@@ -11,7 +11,7 @@ The ultimate goal following QC is to move materials into an Asset Staging area, 
 |QC-003|Receive harddrive from vendor|Vendor harddrive|	Confirm with vendor that the harrdrive was safely received. If there are missing files on the harddrive, notify the vendor in writing immediately.| ||			
 |QC-004|Integrity checking|Vendor harddrive|Generate CHECKSUM A on all files on harrdrive, stored in a CSV file.|[md5Scrape.py](md5Scrape.py) OR [qa_cksum.sh](qa_cksum.sh)|			
 |QC-005|Basic QC|Vendor harddrive|Perform aural and visual QC review on selected files (25% of total assets). Identify and flag issues for review.|
-|QC-006|Metadata QC|Vendor harddrive|Audit the technical metadata against requested  specifications.|[MDQC](https://github.com/avpreserve/mdqc)||		
+|QC-006|Metadata Quality and Conformance Checking|Vendor harddrive|Audit the technical metadata against requested  specifications and save conformance reports (pass/fail per batch).|[MDQC](https://github.com/avpreserve/mdqc) and exploring [MediaConch](https://github.com/MediaArea/MediaConch)||		
 |QC-007|Transfer|Vendor harddrive|Transfer files from harddrive to Server| | |
 |QC-008|Integrity checking|Server|Generate CHECKSUM B on all transferred files on Server|[md5Scrape.py](md5Scrape.py) OR [qa_cksum.sh](qa_cksum.sh)||	
 |QC-009|Integrity checking|Server|Run the script that compares CHECKSUM A (from the harddrive) with CHECKSUM B (on the server) (Server)|[checksumValidation.py](checksumValidation.py)|	|	
