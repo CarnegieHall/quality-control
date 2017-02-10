@@ -17,6 +17,7 @@ These scripts have benefitted immensely from a wide community of archiving, pres
 |**[md5Scrape.py](md5Scrape.py)** | Scrapes all .md5 sidecar files in a given directory and outputs information into a formatted CSV |
 | **[reconcileList.py](reconcileList.py)**     | Compare two lists of files, and output CSV of non-matching values |
 | **[embedCopyrightMetadata.sh](embedCopyrightMetadata.sh)** | Script to embed hardcoded Creator and Copyright Notice metadata using ExifTool |
+| **[mediaconch-xmlreport-summary.py](https://github.com/CarnegieHall/quality-control/blob/master/mediaconch/mediaconch-xmlreport-summary.py)** | Script to print pass/fail counts when given a MediaConch XML report |
 
 ###DOCUMENTATION
 - [Digitization specs](digitization-specs.md) provided to our vendors for reformatting.
