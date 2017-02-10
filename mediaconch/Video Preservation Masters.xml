@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<policy type="and" name="Video Preservation Masters" license="CC0-1.0+">
+  <description>Per digitization specs at https://github.com/CarnegieHall/quality-control/blob/master/digitization-specs.md</description>
+  <rule name="Video Format = v210" value="CodecID" tracktype="Video" occurrence="*" operator="=">v210</rule>
+  <rule name="Audio Format = PCM" value="Format" tracktype="Audio" occurrence="*" operator="=">PCM</rule>
+  <rule name="Video Color space = YUV" value="ColorSpace" tracktype="Video" occurrence="*" operator="=">YUV</rule>
+  <rule name="Video Chroma 4:2:2" value="ChromaSubsampling" tracktype="Video" occurrence="*" operator="=">4:2:2</rule>
+  <rule name="Video Bit Depth = 10" value="BitDepth" tracktype="Video" occurrence="*" operator="=">10</rule>
+  <rule name="Video Compression = Lossless" value="Compression_Mode" tracktype="Video" occurrence="*" operator="=">Lossless</rule>
+  <rule name="Audio Sample = 47khz" value="SamplingRate" tracktype="Audio" occurrence="*" operator="=">48000</rule>
+</policy>
