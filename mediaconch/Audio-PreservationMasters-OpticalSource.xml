@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<policy type="and" name="Audio-PreservationMasters-OpticalSource" license="CC-BY-SA-4.0+">
+  <rule name="Container = BWF" value="Format" tracktype="General" occurrence="*" operator="=">Wave</rule>
+  <rule name="Audio Format = PCM" value="Format" tracktype="Audio" occurrence="*" operator="=">PCM</rule>
+  <rule name="Audio Sample = 44.1kHz" value="SamplingRate" tracktype="Audio" occurrence="*" operator="=">44100</rule>
+  <rule name="Audio Bit Depth = 16 bit" value="BitDepth" tracktype="Audio" occurrence="*" operator="=">16</rule>
+</policy>

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<policy type="and" name="Audio-PreservationMasters-Analog" license="CC-BY-SA-4.0+">
+  <rule name="Container = BWF" value="Format" tracktype="General" occurrence="*" operator="=">Wave</rule>
+  <rule name="Audio Format = PCM" value="Format" tracktype="Audio" occurrence="*" operator="=">PCM</rule>
+  <rule name="Audio Sample = 96kHz" value="SamplingRate" tracktype="Audio" occurrence="*" operator="=">96000</rule>
+  <rule name="Audio Bit Depth = 24 bit" value="BitDepth" tracktype="Audio" occurrence="*" operator="=">24</rule>
+</policy>
