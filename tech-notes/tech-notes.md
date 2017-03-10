@@ -57,7 +57,7 @@ To combine all CSVs in subdirectories into one CSV with desried filenaming conve
 - If modifications are necessary, see EMBED ADMINISTRATIVE METADATA IN VIDEO 
 
 ###EMBED ADMINISTRATIVE METADATA IN VIDEO
-**WHY**: When using a vendor to digitize, it is necessary to QC the metadata embedded into a file in addition to the checks to ensure the file opens, passes playback, contains expected audio and video streams, etc. For our preservation masters, CH required certain fields contain specific copyright and producer metadata. When issues with this metadata are found (inaccurate, incomplete, or simply missing) we use [Exiftool](http://www.sno.phy.queensu.ca/~phil/exiftool/) to embed these fields with the desired information. 
+**WHY**: When using a vendor to digitize, it is necessary to QC the metadata embedded into a file in addition to the checks to ensure the file opens, passes playback, contains expected audio and video streams, etc. For our preservation masters, CH required certain fields contain specific copyright and producer metadata. When issues with this metadata are found (inaccurate, incomplete, or missing) we use [Exiftool](http://www.sno.phy.queensu.ca/~phil/exiftool/) to embed these fields with the desired information. 
 
 We use the `overwrite_original_in_place` because it allows the original files' attributes to be preserved (including original file creation date, type, etc). From the Exiftool documentation, this process happens "by opening the original file in update mode and replacing its data with a copy of a temporary file before deleting the temporary. The extra step results in slower performance, so the -overwrite_original option should be used instead unless necessary." NB: It takes a few hours per 100GB video.
 
