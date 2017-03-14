@@ -1,13 +1,13 @@
 # quality-control
 
-##OVERVIEW
+## OVERVIEW
 Carnegie Hall Archives maintains a series of small, portable scripts to expedite batch processes for quality control on our Digital Collections.
 
 These scripts have benefitted immensely from a wide community of archiving, preservation, and programming experts who share their code and troubleshooting techniques online. We are excited by the opportunity to participate in this community and have our methods improve through open collaboration and mutual exchange.
 
-##CONTENTS
+## CONTENTS
 
-###SCRIPTS
+### SCRIPTS
 
 | Script Name         | Purpose           |
 | ------------- |-------------|
@@ -19,18 +19,18 @@ These scripts have benefitted immensely from a wide community of archiving, pres
 | **[embedCopyrightMetadata.sh](embedCopyrightMetadata.sh)** | Script to embed hardcoded Creator and Copyright Notice metadata using ExifTool |
 | **[mediaconch-xmlreport-summary.py](https://github.com/CarnegieHall/quality-control/blob/master/mediaconch/mediaconch-xmlreport-summary.py)** | Script to print pass/fail counts when given a MediaConch XML report |
 
-###DOCUMENTATION
+### DOCUMENTATION
 - [Digitization specs](digitization-specs.md) provided to our vendors for reformatting.
 - A working draft of our [post-digitization quality control workflow](qc-workflow-overview.md).
 - [Technical notes](tech-notes/tech-notes.md), or brief descriptions of snippets of code used to satisfy various small-scale use cases in our quality control workflow. 
 
-##USAGE AND LICENSE
-###USAGE GUIDELINES
+## USAGE AND LICENSE
+### USAGE GUIDELINES
 This code is provided “as is” and for you to use at your own risk. The information included in the contents of this repository is not necessarily complete. Carnegie Hall offers the scripts as-is and makes no representations or warranties of any kind.
 
 We plan to update the scripts regularly. We welcome any [Issues](https://github.com/CarnegieHall/quality-control/issues) and other feedback. Please let us know if you have found the contents of this repository useful!
 
-###LICENSE
+### LICENSE
 _The MIT License (MIT)_
 
 _Copyright (c) 2016 Carnegie Hall_
