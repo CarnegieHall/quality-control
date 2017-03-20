@@ -1,4 +1,4 @@
-#digitization-specs
+# digitization-specs
 
 ## OVERVIEW
 
@@ -34,6 +34,10 @@ This document describes preservation master (and mezzanine, where applicable) de
 #### Video mezzanines:
 - QuickTime wrapper (.mov extension)
 - Video encoded using the FourCC `dvc ` codec.
+
+### Preservation masters from optical sources (DVDs)
+- MPEG-2
+- 4:2:2, 8-bit
 
 ### Motion Picture Film
 
