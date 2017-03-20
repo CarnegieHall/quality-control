@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<policy type="and" name="Video-DVDsource">
+  <rule name="Video Format = MPEG" value="Format" tracktype="Video" occurrence="*" operator="=">MPEG Video</rule>
+  <rule name="Video Format Version = MPEG2" value="Format_Version" tracktype="Video" occurrence="*" operator="=">2</rule>
+  <rule name="Video Bit Depth = 10" value="BitDepth" tracktype="Video" occurrence="*" operator="=">8</rule>
+  <rule name="Audio Sampling Rate = 47khz" value="SamplingRate" tracktype="Audio" occurrence="*" operator="=">48000</rule>
+</policy>
