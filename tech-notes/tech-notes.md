@@ -15,6 +15,19 @@ To copy all TIF files from subdirectories in a target directory:
 To move (NOT COPY TMP AND DELETE ORIGINAL) preservation master-identified MOV files from subdirectories in a target directory:
 
   `find . -name \*_pm.mov -exec /bin/mv {} TARGETDIR \;`
+  
+### COPY FILES FROM CSV LIST
+
+**WHY**: Our Python script to parse thru a multi-column CSV and copy files from a source dir to a target dir had significant lag when ran against networked storage. Our Network Architecture Manager provided the following code. You'll need a CSV with a header and list of filenames. This script sets three variables (source folder, destination folder, CSV), then loads the CSV file and for each line it searches in source directory (and subdirectories) against the source variable. If it matches, the script copies the file to the destination folder. Run this script on a Windows machine cmd prompt:
+
+```
+set source=[specify source path, EXAMPLE: "e:\folderName"]
+set destination=[specify destination path, EXAMPLE: "z:\Asset Staging\GB-006"]
+set listcsv=[specify path/filename of file with filename list; single column CSV - keep header!]
+for /f "skip=1" %%a in (%listcsv%) do (
+forfiles /P %source% /S /M %%a /C "cmd /C copy @file %destination%
+)
+```
 
 ### COUNT FILES IN DIRECTORY
 **WHY**: The majority of our initial QC on digitized files happens on vendor-delivered hard drives or network drives. This results in us needing to change the location of files (from storage media to network, between directories on a single storage, etc) to adhere to our established workflow. To quickly (not comprehensively) verify that the quantity of files has been copied successfully, it's helpful to have a count of a directory before and after the process is complete.
