@@ -14,6 +14,7 @@ These scripts have benefitted immensely from a wide community of archiving, pres
 |**[checksumValidation.py](checksumValidation.py)**      | Compares two given checksum hashes and outputs log of pass/fail/missing |
 |**[qa_cksum.sh](qa_cksum.sh)**      | Creates formatted output of md5, md5 create timestamp, filename, mime type, last modified timestamp |
 |**[copyFilesFromList.py](copyFilesFromList.py)** | Copies files to a target directory based on filename identified in a CSV |
+|**[matchvaluesfromlists.py](matchvaluesfromlists.py)** | Compares two lists based on shared value and outputs information about that value|
 |**[md5Scrape.py](md5Scrape.py)** | Scrapes all .md5 sidecar files in a given directory and outputs information into a formatted CSV |
 | **[reconcileList.py](reconcileList.py)**     | Compare two lists of files, and output CSV of non-matching values |
 | **[embedCopyrightMetadata.sh](embedCopyrightMetadata.sh)** | Script to embed hardcoded Creator and Copyright Notice metadata using ExifTool |
