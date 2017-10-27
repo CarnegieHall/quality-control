@@ -46,3 +46,4 @@ with open(outputPath, 'w', newline='') as csvfile:
 	w = csv.writer(csvfile, dialect='excel', delimiter=',')
 	for k,v in simplifiedDict.items():
 		w.writerow([k,v])
+		#need date value to be formatted as YYYY-MM-DD
