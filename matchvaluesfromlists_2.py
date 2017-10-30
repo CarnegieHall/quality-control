@@ -17,6 +17,7 @@ import io
 filePath_1 = str(sys.argv[1])
 filePath_2 = str(sys.argv[2])
 filePath_3 = str(sys.argv[3])
+batch = str(sys.argv[4])
 
 dateDict = {}
 legacyIdDict = {}
@@ -35,15 +36,18 @@ with open(filePath_1, 'rU') as f, open(filePath_2, 'rU') as g:
 	for row in dateData:
 		legacy_id_2 = row[0]
 		uploadDate = row[1]
-		legacy_id = legacyIdDict[legacy_id_2]
+		if legacy_id_2 not in legacyIdDict:
+			print('Not in DAMS: ',legacy_id_2)
+		else:
+			legacy_id = legacyIdDict[legacy_id_2]
 
-		simplifiedDict[legacy_id] = uploadDate
-		# need to add loop to catch legacy IDs NOT in arg2
+			simplifiedDict[legacy_id] = uploadDate
 
 outputPath = ''.join([str(filePath_3), '/UploadDates', batch, '.csv'])
 
 with open(outputPath, 'w', newline='') as csvfile:
 	w = csv.writer(csvfile, dialect='excel', delimiter=',')
+	w.writerow(["DAMS ID", "Digital Accession Date"])
 	for k,v in simplifiedDict.items():
 		w.writerow([k,v])
 		#need date value to be formatted as YYYY-MM-DD
