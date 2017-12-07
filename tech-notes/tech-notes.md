@@ -1,6 +1,8 @@
 
 # tech-notes
 
+If you can't find what you're looking for here, try [Script Ahoy](http://dd388.github.io/crals/), a "community resource is intended to provide helpful one-liners and script code specifically drawn from real-life examples in archives and libraries".
+
 ## USE CASES
 
 Below are brief descriptions and snippets of code used to satisfy various small-scale use cases in our [quality control workflow](https://github.com/CarnegieHall/quality-control/blob/master/qc-workflow-overview.md). If you'd like to share your strategy for meeting any of the needs described below, please add a comment as a [new Issue](https://github.com/CarnegieHall/quality-control/issues). Feedback welcome.
