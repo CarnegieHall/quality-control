@@ -3,11 +3,11 @@
 # Checksum Script  
 # written by AVPreserve
 # 2010-08-11              http://avpreserve.com
-# last updated 2016-09-21                    
+# last updated 2018-08-21                    
 # =============================================
 # requires md5,sha1sum,find,echo,file,basename,stat,date,eval
 # setting variables, used in filenaming
-# To run, $ ./qa_cksum.sh [content dir] [output destination dir] 0 
+# To run on a Mac, $ ./qa_cksum.sh [content dir] [output destination dir] 0 
 # run script with two arguments:
 # argument 1 is the directory of content to analyze
 # argument 2 is the directory to sending reporting to
