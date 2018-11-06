@@ -110,6 +110,22 @@ Using ImageMagick (already installed, or use `brew install imagemagick` if you h
 4. After the identified content is surrounded by the red boxes, under _Black Out & Remove Content_, click *Apply Redaction*. This will turn your red outlined boxes into black filled DRAFT redactions. It's not final yet! One more step...
 5. Click _File_ > _Save_ or _Save As_ and name as appropriate in the preferred destination. Now the pixels representing the sensitive information have been overwritten with black. Check it out!
 
+### LINKED OPEN DATA - FIND ALL WORK URIs RELATED TO AN EVENT URI
+
+**WHY**: Part of the tagging process for assets is associating work records with videos where that work is performed. On the [Performance History Linked Open Data endpoint](http://data.carnegiehall.org), paste this SPARQL query in the query window to get a list of work URIs and the work label for review or download in various serializations. 
+
+*FYI - You must enter the URI for the event you want to find works, a sample event URI is included below*
+```
+#Find works IDs from an event
+PREFIX event: <http://purl.org/NET/c4dm/event.owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select ?workID ?workLabel where {
+    <http://data.carnegiehall.org/events/18489> event:product ?workPerformance .
+  ?workPerformance event:product ?workID .
+    ?workID rdfs:label ?workLabel .
+}
+```
+
 ## LICENSE INFORMATION
 _The MIT License (MIT)_
 
