@@ -41,6 +41,15 @@ To find the total of each sub directories and the overall total (Windows) of TIF
 To find the total number of TIF files in a TARGETDIR (the result of this will be +1 the actual number of files):
 
   In the TARGETDIR, `ls -l dir/*/*.tif | wc -l`
+  
+### LIST FILES WITH PATHS FROM ALL SUB DIRECTORIES
+**WHY**: To prep for the quality control process, we need a plain text list of all filenames for a given batch. Lifted from this example of how to [List All Files Recursively with Full Directory Paths Shown](http://osxdaily.com/2013/01/29/list-all-files-subdirectory-contents-recursively/), do the following to get all paths:
+
+` cd TARGET DIR`
+
+` find . -type f > ~/OUTPUTDIR/output.txt`
+
+Then you can open this list in Excel, delimit by "/" and isolate folders and/or filenames as needed.
 
 ### OUTPUT DIRECTORY TREE
 **WHY**: There are instances where creating and validating a disk image are out of scope, and instead we need to copy material, e.g. from a source hard drive or networked drive, to a back up destination. For complex folder hierarchies, it is helpful to have two plain-text directory tree outputs to compare to help identify inconsistencies on a large scale. With these files, we use many comparison strategies, including [Diff Checker](https://www.diffchecker.com). 
