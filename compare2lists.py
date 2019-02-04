@@ -20,16 +20,16 @@ unmatchedIDs = []
 allSubtypes = []
 
 with open(filePath1, 'rU') as f1:
-    itemData 1 = csv.reader(f1, dialect='excel', delimiter=',', quotechar='"')
-    next(itemData 1, None)  # skip the headers
-    for row in itemData 1:
+    itemData_1 = csv.reader(f1, dialect='excel', delimiter=',', quotechar='"')
+    next(itemData_1, None)  # skip the headers
+    for row in itemData_1:
     	itemID = row[0]
     	itemSubtypes.append(itemID)
 
 with open(filePath2, 'rU') as f2:
-    itemData 2 = csv.reader(f2, dialect='excel', delimiter=',', quotechar='"')
-    next(itemData 2, None)  # skip the headers
-    for row in itemData 2:
+    itemData_2 = csv.reader(f2, dialect='excel', delimiter=',', quotechar='"')
+    next(itemData_2, None)  # skip the headers
+    for row in itemData_2:
     	itemID = row[0]
     	allSubtypes.append(itemID)
 
@@ -46,8 +46,9 @@ outputPath = ''.join([str(filePath3), '/umatchedIDs.csv'])
 #     h.write(','.join(str(opas_id) for opas_id in unmatchedIDs))
 
 
-with open(outputPath, 'a') as h:
-	h = csv.writer(h, dialect='excel', quotechar='"', quoting=csv.QUOTE_ALL)
-	h.writerow(unmatchedIDs)
+with open(outputPath, 'w') as h:
+    for item in unmatchedIDs:
+        h.write(''.join(['"', item, '"']))
+        h.write('\n')
 
 print('Done!')
