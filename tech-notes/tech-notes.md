@@ -134,6 +134,31 @@ select ?workID ?workLabel where {
     ?workID rdfs:label ?workLabel .
 }
 ```
+### LINKED OPEN DATA - FIND ALL EVENTS THAT HAPPENED ON SPECIFIC MONTH/DAY
+
+**WHY**: Find what happened at Carnegie Hall on specific days of the year, e.g., birthdays, holidays, etc. On the [Performance History Linked Open Data endpoint](http://data.carnegiehall.org), paste this SPARQL query in the query window to get a list of event URIs, title of event, and date (MM/DD/YYYY) for what you've requested. The following sample has the month/day of January 15  in `FILTER (MONTH(?date) = 1 && DAY(?date) = 15)`, so just change the `1` to desired month integer and `15`to desired day integer.
+
+FYI - the results will be chronologically ordered, thanks to the handy `ORDER BY ?date`. 
+
+```
+#Find events on specific month/day
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX event: <http://purl.org/NET/c4dm/event.owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select ?event ?title (CONCAT(STR(MONTH(?date)),
+           '/',
+           STR(DAY(?date)),
+           '/',
+           STR(YEAR(?date))) as ?displayDate)
+where
+ {
+  ?event a event:Event ;
+           dcterms:date ?date ;
+           rdfs:label ?title .
+  FILTER (MONTH(?date) = 1 && DAY(?date) = 15)
+}
+ORDER BY ?date
+```
 
 ## LICENSE INFORMATION
 _The MIT License (MIT)_
