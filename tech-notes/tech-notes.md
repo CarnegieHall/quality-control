@@ -136,7 +136,7 @@ select ?workID ?workLabel where {
 ```
 ### LINKED OPEN DATA - FIND ALL EVENTS THAT HAPPENED ON SPECIFIC MONTH/DAY
 
-**WHY**: Find what happened at Carnegie Hall on specific days of the year, e.g., birthdays, holidays, etc. On the [Performance History Linked Open Data endpoint](http://data.carnegiehall.org), paste this SPARQL query in the query window to get a list of event URIs, title of event, and date (MM/DD/YYYY) for what you've requested. The following sample has the month/day of January 15  in `FILTER (MONTH(?date) = 1 && DAY(?date) = 15)`, so change the `1` to desired month integer and `15`to desired day integer.
+**WHY**: Find what happened at Carnegie Hall on specific days of the year, e.g., events, holidays, etc. On the [Performance History Linked Open Data endpoint](http://data.carnegiehall.org), paste this SPARQL query in the query window to get a list of event URIs, title of event, and date (MM/DD/YYYY) for what you've requested. The following sample has the month/day of January 15  in `FILTER (MONTH(?date) = 1 && DAY(?date) = 15)`, so change the `1` to desired month integer and `15`to desired day integer.
 
 FYI - the results will be chronologically ordered, thanks to the handy `ORDER BY ?date`. 
 
@@ -158,6 +158,31 @@ where
   FILTER (MONTH(?date) = 1 && DAY(?date) = 15)
 }
 ORDER BY ?date
+```
+### LINKED OPEN DATA - FIND ALL BIRTHDAYS FOR A SPECIFIC MONTH/DAY
+
+**WHY**: Find birthdays for Carnegie Hall performers on specific days of the year. On the [Performance History Linked Open Data endpoint](http://data.carnegiehall.org), paste this SPARQL query in the query window to get a list of URIs, names, birth places, and years for what you've requested. The following sample has the month/day of January 15 in `FILTER (MONTH(?date) = 1 && DAY(?date) = 15)`, so change the `1` to desired month integer and `15`to desired day integer.
+
+```
+#Whose birthday is on this day?
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+
+PREFIX schema: <http://schema.org/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+SELECT ?personID ?personName ?birthPlaceLabel (YEAR(?date) as ?year) 
+WHERE
+{
+
+    ?personID schema:birthDate ?date ;
+            foaf:name ?personName ;
+            dbo:birthPlace ?birthPlace .
+    ?birthPlace rdfs:label ?birthPlaceLabel .
+    FILTER (MONTH(?date) = 1 && DAY(?date) = 15)
+
+}
+ORDER BY ?year
+LIMIT 100
 ```
 
 ## LICENSE INFORMATION
