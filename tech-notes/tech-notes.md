@@ -185,6 +185,32 @@ ORDER BY ?year
 LIMIT 100
 ```
 
+### LINKED OPEN DATA - FIND ALL BIRTHDAYS FOR A SPECIFIC MONTH (FULL MONTH)
+
+**WHY**: Find birthdays for Carnegie Hall performers on specific days of the year. On the [Performance History Linked Open Data endpoint](http://data.carnegiehall.org), paste this SPARQL query in the query window to get a list of URIs, names, birth places, and years for what you've requested. The following sample has the current month.
+
+
+```
+#Whose birthday is today?
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX schema: <http://schema.org/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+SELECT ?personID ?personName ?birthPlaceLabel ?date 
+WHERE
+{
+    BIND(MONTH(NOW()) AS ?nowMonth)
+    BIND(DAY(NOW()) AS ?nowDay)
+    ?personID schema:birthDate ?date ;
+            foaf:name ?personName ;
+            dbo:birthPlace ?birthPlace .
+    ?birthPlace rdfs:label ?birthPlaceLabel .
+    FILTER (MONTH(?date) = ?nowMonth && DAY(?date) > ?nowDay)
+}
+ORDER BY asc(?date)
+LIMIT 1000
+```
+
 ## LICENSE INFORMATION
 _The MIT License (MIT)_
 
