@@ -191,7 +191,7 @@ LIMIT 100
 
 
 ```
-#Whose birthday is today?
+#Whose birthday is this month?
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX dbo: <http://dbpedia.org/ontology/>
 PREFIX schema: <http://schema.org/>
