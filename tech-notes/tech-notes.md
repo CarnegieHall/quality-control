@@ -126,11 +126,12 @@ Using ImageMagick (already installed, or use `brew install imagemagick` if you h
 *FYI - You must enter the URI for the event you want to find works, a sample event URI is included below*
 ```
 #Find works IDs from an event
+PREFIX schema: <http://schema.org/>
 PREFIX event: <http://purl.org/NET/c4dm/event.owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 select ?workID ?workLabel where {
-    <http://data.carnegiehall.org/events/18489> event:product ?workPerformance .
-  ?workPerformance event:product ?workID .
+    <http://data.carnegiehall.org/events/20945> schema:subEvent ?workPerformance .
+  ?workPerformance schema:workPerformed ?workID .
     ?workID rdfs:label ?workLabel .
 }
 ```
